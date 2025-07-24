@@ -500,10 +500,10 @@ const MainContent: React.FC = () => {
 
   const [viewOptions, setViewOptions] = useState({
     questions: true,
-    owner: true,
-    type: true,
-    marks: true,
-    actions: true,
+    owner: false,
+    type: false,
+    marks: false,
+    actions: false,
   });
 
   const gridColumns = `
@@ -833,7 +833,7 @@ const QuestionItem: React.FC<QuestionItemProps> = ({
 
 // App Component
 const App: React.FC = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -850,3 +850,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+ 
